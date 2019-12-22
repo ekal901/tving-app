@@ -1,0 +1,134 @@
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  min-width: 1200px;
+  z-index: 1000;
+}
+
+.ticket-hover:hover + .ticket-box,
+.ticket-box:hover {
+  display: block;
+  visibility: visible;
+}
+.ticket-box {
+  display: none;
+  position: absolute;
+  padding: 5px 0;
+  width: 100px;
+  background: rgba(20, 20, 20, 0.96);
+  top: 30px;
+  margin-left: -23px;
+  border-radius: 8px;
+  li {
+    &:hover {
+      background-color: #1f1f1f;
+    }
+  }
+  a {
+    color: #4c4c4c;
+    text-align: center;
+    margin: auto;
+    padding: 3px 0;
+  }
+}
+
+.header {
+  background-color: #fa3b33;
+  &.main {
+    background-color: #fb1f45;
+  }
+  a {
+    font-size: 1.5rem;
+    color: #fafafa;
+    font-weight: bold;
+    opacity: 0.5;
+    padding: 9px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.header__side-top {
+  background-color: #fa3b33;
+  &.main {
+    background-color: #e51c3e;
+  }
+  filter: brightness(0.9);
+  height: 30px;
+  > ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 45px;
+    li {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    a {
+      font-size: 12px;
+      color: #fafafa;
+      opacity: 0.5;
+      padding: 9px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.header__wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px auto;
+}
+
+.header__logo {
+  position: absolute;
+  left: 0;
+}
+
+.header__search {
+  position: absolute;
+  right: 0;
+}
+.header__main {
+  padding: 20px 0;
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  }
+}
+.header__submain {
+  padding: 10px 0;
+  height: 120px;
+  ul {
+    display: flex;
+
+    a {
+      position: relative;
+      font-size: 17px;
+      padding: 0 18px;
+    }
+    .on {
+      &:before {
+        content: "";
+        width: 80%;
+        height: 3px;
+        position: absolute;
+        left: 8%;
+        bottom: -42%;
+        background: #fff;
+      }
+    }
+  }
+}
